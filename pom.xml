@@ -15,6 +15,10 @@
 
         <telegrambots.version>6.9.7.1</telegrambots.version>
         <discord4j.version>3.2.6</discord4j.version>
+        <reactor-netty-http.version>1.1.13</reactor-netty-http.version>
+        <reactor-netty-core.verison>1.1.13</reactor-netty-core.verison>
+        <netty-handler.version>4.1.94.Final</netty-handler.version>
+        <netty-codec-http.version>4.1.108.Final</netty-codec-http.version>
     </properties>
 
     <dependencies>
@@ -45,6 +49,29 @@
                 <version>${discord4j.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-codec-http</artifactId>
+                <version>${netty-codec-http.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.projectreactor.netty</groupId>
+                <artifactId>reactor-netty-http</artifactId>
+                <version>${reactor-netty-http.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-handler</artifactId>
+                <version>${netty-handler.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.projectreactor.netty</groupId>
+                <artifactId>reactor-netty-core</artifactId>
+                <version>${reactor-netty-core.verison}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
