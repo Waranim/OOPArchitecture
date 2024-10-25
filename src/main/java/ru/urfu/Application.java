@@ -8,11 +8,12 @@ public class Application {
     public static void main(String[] args) {
         String telegramBotName = System.getenv("telegram_botName");
         String telegramToken = System.getenv("telegram_token");
-        new TelegramBot(telegramBotName, telegramToken)
+        Handler handler = new Handler();
+        new TelegramBot(telegramBotName, telegramToken, handler)
                 .start();
 
         String discordToken = System.getenv("discord_token");
-        new DiscordBot(discordToken)
+        new DiscordBot(discordToken, handler)
                 .start();
 
         // сколько угодно чат платформ и все должны работать одинаково
