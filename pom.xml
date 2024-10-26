@@ -22,13 +22,11 @@
     </properties>
 
     <dependencies>
-        <!-- FIXME Тут есть уязвимость в транзитивной библиотеке, надо поправить (доп. задание) -->
         <dependency>
             <groupId>org.telegram</groupId>
             <artifactId>telegrambots</artifactId>
         </dependency>
 
-        <!-- FIXME В некоторых транзитивных библиотеках есть уязвимость, надо поправить (доп. задание) -->
         <dependency>
             <groupId>com.discord4j</groupId>
             <artifactId>discord4j-core</artifactId>
